@@ -1,0 +1,77 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.o, .x {
+    font-size: x-large;
+}
+
+.p1, .p2, .o, .x {
+    width: 25%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.playing-field {
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    grid-template-rows: repeat(3, 8rem);
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+}
+
+.r {
+    border-right: 1px solid black;
+}
+
+.l {
+    border-left: 1px solid black;
+}
+
+.u {
+    border-top: 1px solid black;
+}
+
+.b {
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 400px) {
+    .playing-field {
+        grid-template-columns: repeat(3, 7rem);
+        grid-template-rows: repeat(3, 7rem);
+    }
+
+    .item {
+        font-size: 6em;
+    }
+}
